@@ -31,43 +31,30 @@ const ContentWrapper = styled.div`
   z-index: 1;
   max-width: 1080px;
   margin: 0 auto;
-`;
-
-const Box = styled.div`
-  padding: 20px;
-  background: #fff;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
 
   @media (max-width: ${breakpoints.tablet}) {
-    margin: 0 20px;
+    margin: 0 15px;
   }
-`;
-
-const Text = styled.p`
-  color: #000;
-  font-size: 20px;
-  font-weight: bold;
-  word-break: break-all;
-`;
-const SmallText = styled.p`
-  margin: 0;
-  margin-top: 8px;
-  font-size: 16px;
-  font-weight: normal;
 `;
 
 const List = styled.ul`
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 24px;
+  gap: 16px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-wrap: wrap;
+  }
 `;
 
 const Item = styled.li`
   margin: 0;
   width: calc(50% - 12px);
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 100%;
+  }
 `;
 
 const LinkItem = styled(Link)`
@@ -81,6 +68,8 @@ const LinkItem = styled(Link)`
   padding: 20px;
   cursor: pointer !important;
   color: #333;
+  height: 65px;
+  box-sizing: border-box;
 
   &:link,
   &:visited {
@@ -114,7 +103,7 @@ export const Info = () => {
           <Item>
             <LinkItem to="mailto:sample@gmail.com">
               <Icon icon={faEnvelope} size="2x" />
-              sample@gmail.com"
+              sample@gmail.com
             </LinkItem>
           </Item>
         </List>

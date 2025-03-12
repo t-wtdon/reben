@@ -7,7 +7,7 @@ import { Access } from "../common/pages/Home/Access";
 import { SlideShow } from "../common/pages/Home/Slideshow";
 import { Info } from "../common/pages/Home/Info";
 import { Point } from "../common/pages/Home/Point";
-import { Recruit } from "../common/pages/Home/Recruit";
+import { Voice } from "../common/pages/Home/Voice";
 
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
@@ -80,7 +80,7 @@ export const Home = () => {
         <SlideShow />
         <Features />
         <Point />
-        <Recruit />
+        <Voice />
         <Access />
       </ContentInner>
       <SlideShow />

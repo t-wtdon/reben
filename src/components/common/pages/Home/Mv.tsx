@@ -30,6 +30,10 @@ const Box = styled.div`
   position: absolute;
   top: 40%;
   left: 15%;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    left: 10%;
+  }
 `;
 
 const Title = styled.h3`
@@ -38,6 +42,10 @@ const Title = styled.h3`
   color: #fff;
   margin: 8px 0;
   font-size: 42px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 36px;
+  }
 `;
 
 export const Mv = () => {

@@ -13,6 +13,7 @@ const Container = styled.div`
 
 const List = styled.ul`
   margin-bottom: 0;
+  padding: 0;
 `;
 
 const Item = styled.li`
@@ -23,11 +24,25 @@ const Item = styled.li`
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-wrap: wrap;
+    gap: 12px;
+
+    &:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+  }
 `;
 const Image = styled.img`
   width: 40%;
   height: 500px;
   object-fit: cover;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 100%;
+    height: 400px;
+  }
 `;
 const SubTitle = styled.p`
   position: relative;

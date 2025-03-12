@@ -35,6 +35,14 @@ const Item = styled.li`
 
   @media (max-width: ${breakpoints.sp}) {
     width: 100%;
+
+    &:nth-child(even) {
+      background: #4caf50;
+    }
+
+    &:nth-child(odd) {
+      background: #03a9f4;
+    }
   }
 `;
 
@@ -51,7 +59,7 @@ const Name = styled.p`
   margin: 0;
 `;
 
-export const Recruit = () => {
+export const Voice = () => {
   return (
     <Container>
       <Heading title="社員の声" />
