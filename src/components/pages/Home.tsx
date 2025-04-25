@@ -5,7 +5,7 @@ import { About } from "../common/pages/Home/About";
 import { Features } from "../common/pages/Home/Features";
 import { Access } from "../common/pages/Home/Access";
 import { SlideShow } from "../common/pages/Home/Slideshow";
-import { Info } from "../common/pages/Home/Info";
+import { Info } from "../common/Info";
 import { Point } from "../common/pages/Home/Point";
 import { Voice } from "../common/pages/Home/Voice";
 
@@ -75,15 +75,17 @@ export const Home = () => {
       </Helmet>
       <ScrollToTop />
       <Mv />
+      <About />
+      <Features />
+      {/* 
       <ContentInner>
-        <About />
         <SlideShow />
         <Features />
         <Point />
         <Voice />
         <Access />
-      </ContentInner>
-      <SlideShow />
+      </ContentInner> */}
+      {/* <SlideShow /> */}
       <Info />
     </>
   );

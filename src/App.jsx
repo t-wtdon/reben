@@ -5,7 +5,6 @@ import { DefaultLayout } from "./components/layouts/DefaultLayout";
 import { Home } from "./components/pages/Home";
 import { Company } from "./components/pages/Company";
 import { About } from "./components/pages/About";
-import { Recruit } from "./components/pages/Recruit";
 
 export const App = () => {
   return (
@@ -32,14 +31,6 @@ export const App = () => {
           element={
             <DefaultLayout>
               <About />
-            </DefaultLayout>
-          }
-        />
-        <Route
-          path="/recruit"
-          element={
-            <DefaultLayout>
-              <Recruit />
             </DefaultLayout>
           }
         />

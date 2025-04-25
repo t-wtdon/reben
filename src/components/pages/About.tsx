@@ -2,13 +2,13 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
-import { Info } from "../common/pages/Home/Info";
+import { Info } from "../common/Info";
 import { PageHeading } from "../common/PageHeading";
 import { ScrollToTop } from "../common/ScrollToTop";
 
-const story1 = require("../../assets/images/about/story1.jpg");
-const story2 = require("../../assets/images/about/story2.jpg");
-const story3 = require("../../assets/images/about/story3.jpg");
+// const story1 = require("../../assets/images/about/story1.jpg");
+// const story2 = require("../../assets/images/about/story2.jpg");
+// const story3 = require("../../assets/images/about/story3.jpg");
 
 export const About = () => {
   const ContentInner = styled.div`
@@ -168,7 +168,7 @@ export const About = () => {
           <Title>会社の歴史・沿革</Title>
           <List>
             <Item>
-              <Image src={story1} alt="" />
+              {/* <Image src={story1} alt="" /> */}
               <div>
                 <StoryTitle>2019年3月1日 - 個人事業主として開業</StoryTitle>
                 <p>
@@ -178,7 +178,7 @@ export const About = () => {
               </div>
             </Item>
             <Item>
-              <Image src={story2} alt="" />
+              {/* <Image src={story2} alt="" /> */}
               <div>
                 <StoryTitle>2019年10月1日 - 一人目の社員が入社</StoryTitle>
                 <p>
@@ -188,7 +188,7 @@ export const About = () => {
               </div>
             </Item>
             <Item>
-              <Image src={story3} alt="" />
+              {/* <Image src={story3} alt="" /> */}
               <div>
                 <StoryTitle>2021年4月13日 - 株式会社Reben設立</StoryTitle>
                 <p>
