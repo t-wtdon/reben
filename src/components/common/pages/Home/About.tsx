@@ -33,7 +33,7 @@ const Container = styled.div`
   box-sizing: border-box;
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 20px 0;
+    padding: 60px 0;
   }
 `;
 

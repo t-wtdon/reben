@@ -60,7 +60,7 @@ const Container = styled.div`
   box-sizing: border-box;
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 20px 0;
+    padding: 60px 0;
   }
 `;
 
@@ -70,12 +70,17 @@ const List = styled.ul`
   list-style-type: none;
   max-width: 800px;
   margin: 0 auto;
+  padding: 0;
 `;
 const Item = styled.li`
   position: relative;
   width: 50%;
   height: 400px;
   overflow: hidden;
+
+  @media (max-width: ${breakpoints.sp}) {
+    width: 100%;
+  }
 `;
 
 const ImageItem = styled.img`
