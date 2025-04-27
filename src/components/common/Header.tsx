@@ -155,11 +155,6 @@ export const Header = () => {
               会社概要
             </MenuLink>
           </MenuItem>
-          <MenuItem>
-            <MenuLink to="/recruit" onClick={toggleMenu}>
-              採用情報
-            </MenuLink>
-          </MenuItem>
         </MenuList>
       </MenuBox>
     </HeaderWrap>

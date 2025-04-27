@@ -1,17 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBriefcase,
-  faBullhorn,
-  faTv,
-  faMobileAlt,
-} from "@fortawesome/free-solid-svg-icons";
 import { Heading } from "../../Heading";
 import { breakpoints } from "../../../../styles/breakpoints";
 
 const bgImage = require("../../../../assets/images/home/sample.jpg");
-
 const sample1 = require("../../../../assets/images/home/sample1.jpg");
 const sample2 = require("../../../../assets/images/home/sample2.jpg");
 const sample3 = require("../../../../assets/images/home/sample3.jpg");
@@ -19,8 +11,8 @@ const sample4 = require("../../../../assets/images/home/sample4.jpg");
 
 const Wrapper = styled.div<{ image: string }>`
   position: relative;
-  background-image: url(${(props) =>
-    props.image}); // 画像パスを変更してください  background-size: cover;
+  background-image: url(${(props) => props.image});
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -47,7 +39,7 @@ const Wrapper = styled.div<{ image: string }>`
   }
   > * {
     position: relative;
-    z-index: 3; // コンテンツを一番上に
+    z-index: 3;
   }
 `;
 
@@ -120,7 +112,7 @@ const Text = styled.p`
   font-size: 14px;
 `;
 
-export const Features = () => {
+export const Business = () => {
   return (
     <Wrapper image={bgImage}>
       <Container>

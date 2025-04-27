@@ -4,10 +4,15 @@ import { breakpoints } from "../../../../styles/breakpoints";
 import { Heading } from "../../Heading";
 
 const Container = styled.div`
-  padding: 60px 0;
+  width: 100%;
+  max-width: 1080px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 20px 0;
+    padding: 60px 0;
   }
 `;
 
@@ -68,9 +73,9 @@ const Text = styled.p`
   line-height: 1.8;
 `;
 
-const img1 = require("../../../../assets/images/home/staff1.jpg");
-const img2 = require("../../../../assets/images/home/staff2.jpg");
-const img3 = require("../../../../assets/images/home/staff3.jpg");
+const img1 = require("../../../../assets/images/home/sample1.jpg");
+const img2 = require("../../../../assets/images/home/sample2.jpg");
+const img3 = require("../../../../assets/images/home/sample3.jpg");
 
 export const Point = () => {
   return (

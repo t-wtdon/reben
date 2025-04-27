@@ -2,29 +2,12 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Mv } from "../common/pages/Home/Mv";
 import { About } from "../common/pages/Home/About";
-import { Features } from "../common/pages/Home/Features";
+import { Business } from "../common/pages/Home/Business";
 import { Access } from "../common/pages/Home/Access";
-import { SlideShow } from "../common/pages/Home/Slideshow";
 import { Info } from "../common/Info";
 import { Point } from "../common/pages/Home/Point";
-import { Voice } from "../common/pages/Home/Voice";
-
-import styled from "styled-components";
-import { breakpoints } from "../../styles/breakpoints";
+import { Career } from "../common/pages/Home/Career";
 import { ScrollToTop } from "../common/ScrollToTop";
-
-const ContentInner = styled.div`
-  width: 100%;
-  max-width: 1080px;
-  width: calc(100% - 40px);
-  margin: 0 auto 80px;
-  padding: 0 20px;
-
-  @media (max-width: ${breakpoints.sp}) {
-    padding: 0 12px;
-    margin: 0 auto 80px;
-  }
-`;
 
 export const Home = () => {
   return (
@@ -76,16 +59,10 @@ export const Home = () => {
       <ScrollToTop />
       <Mv />
       <About />
-      <Features />
-      {/* 
-      <ContentInner>
-        <SlideShow />
-        <Features />
-        <Point />
-        <Voice />
-        <Access />
-      </ContentInner> */}
-      {/* <SlideShow /> */}
+      <Business />
+      <Point />
+      <Career />
+      <Access />
       <Info />
     </>
   );

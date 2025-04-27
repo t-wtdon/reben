@@ -6,9 +6,9 @@ import { Info } from "../common/Info";
 import { PageHeading } from "../common/PageHeading";
 import { ScrollToTop } from "../common/ScrollToTop";
 
-// const story1 = require("../../assets/images/about/story1.jpg");
-// const story2 = require("../../assets/images/about/story2.jpg");
-// const story3 = require("../../assets/images/about/story3.jpg");
+const story1 = require("../../assets/images/about/sample1.jpg");
+const story2 = require("../../assets/images/about/sample2.jpg");
+const story3 = require("../../assets/images/about/sample3.jpg");
 
 export const About = () => {
   const ContentInner = styled.div`
@@ -72,19 +72,37 @@ export const About = () => {
 
   const Item = styled.li`
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 20px;
 
     &:last-child {
       margin-bottom: 0;
     }
+
+    @media (max-width: ${breakpoints.sp}) {
+      gap: 12px;
+    }
   `;
 
   const Image = styled.img`
     width: 40%;
+
+    @media (max-width: ${breakpoints.sp}) {
+      width: 100%;
+    }
+  `;
+
+  const Content = styled.div`
+    width: calc(60% - 24px);
+
+    @media (max-width: ${breakpoints.sp}) {
+      width: 100%;
+    }
   `;
 
   const StoryTitle = styled.p`
+    margin: 0 0 12px;
     font-weight: bold;
     font-size: 20px;
   `;
@@ -168,35 +186,35 @@ export const About = () => {
           <Title>会社の歴史・沿革</Title>
           <List>
             <Item>
-              {/* <Image src={story1} alt="" /> */}
-              <div>
+              <Image src={story1} alt="" />
+              <Content>
                 <StoryTitle>2019年3月1日 - 個人事業主として開業</StoryTitle>
                 <p>
                   私たちの歩みは、2019年3月1日に個人事業主としてスタートしました。
                   少人数からの始まりでしたが、信頼関係を大切にしながら、着実に事業を成長させていきました。
                 </p>
-              </div>
+              </Content>
             </Item>
             <Item>
-              {/* <Image src={story2} alt="" /> */}
-              <div>
+              <Image src={story2} alt="" />
+              <Content>
                 <StoryTitle>2019年10月1日 - 一人目の社員が入社</StoryTitle>
                 <p>
                   2019年10月1日、一人目の社員が入社し、会社の成長を加速させることとなりました。
                   新しい仲間を迎え、共に夢を追い、目標を達成するために歩み始めました。
                 </p>
-              </div>
+              </Content>
             </Item>
             <Item>
-              {/* <Image src={story3} alt="" /> */}
-              <div>
+              <Image src={story3} alt="" />
+              <Content>
                 <StoryTitle>2021年4月13日 - 株式会社Reben設立</StoryTitle>
                 <p>
                   そして、2021年4月13日、私たちは法人化を果たし、
                   株式会社Rebenとして新たな一歩を踏み出しました。
                   これにより、より多くの挑戦を受け入れ、組織としての成長を加速させ、より強固な基盤を築いていきました。
                 </p>
-              </div>
+              </Content>
             </Item>
           </List>
         </Box>
