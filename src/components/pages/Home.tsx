@@ -6,6 +6,7 @@ import { Business } from "../common/pages/Home/Business";
 import { Access } from "../common/pages/Home/Access";
 import { Info } from "../common/Info";
 import { Point } from "../common/pages/Home/Point";
+import { News } from "../common/pages/Home/News";
 import { Career } from "../common/pages/Home/Career";
 import { ScrollToTop } from "../common/ScrollToTop";
 
@@ -62,6 +63,7 @@ export const Home = () => {
       <Business />
       <Point />
       <Career />
+      <News />
       <Access />
       <Info />
     </>

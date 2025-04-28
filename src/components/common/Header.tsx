@@ -12,7 +12,10 @@ const HeaderWrap = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 12px 20px;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.7);
 `;
 
 const Logo = styled(Link)`
@@ -153,6 +156,16 @@ export const Header = () => {
           <MenuItem>
             <MenuLink to="/company" onClick={toggleMenu}>
               会社概要
+            </MenuLink>
+          </MenuItem>
+          <MenuItem>
+            <MenuLink to="/#" onClick={toggleMenu}>
+              TODO: 採用情報
+            </MenuLink>
+          </MenuItem>
+          <MenuItem>
+            <MenuLink to="/#" onClick={toggleMenu}>
+              TODO: お問い合わせ
             </MenuLink>
           </MenuItem>
         </MenuList>

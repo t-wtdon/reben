@@ -11,6 +11,13 @@ const story2 = require("../../assets/images/about/sample2.jpg");
 const story3 = require("../../assets/images/about/sample3.jpg");
 
 export const About = () => {
+  const Container = styled.section`
+    padding-top: 70px; // header分余白を取ってる
+
+    @media (max-width: ${breakpoints.sp}) {
+      padding-top: 56px;
+    }
+  `;
   const ContentInner = styled.div`
     width: 100%;
     max-width: 1080px;
@@ -108,7 +115,7 @@ export const About = () => {
   `;
 
   return (
-    <>
+    <Container>
       <Helmet>
         <title>会社について | 株式会社Reben</title>
         <meta
@@ -220,6 +227,6 @@ export const About = () => {
         </Box>
       </ContentInner>
       <Info />
-    </>
+    </Container>
   );
 };
